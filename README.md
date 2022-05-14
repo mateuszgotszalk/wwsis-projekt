@@ -1,1 +1,3 @@
 # wwsis-projekt
+
+# Mateusz Gotszalk
