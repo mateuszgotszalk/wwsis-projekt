@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "WYPOZYCZENIE")
 public class Wypozyczenie {
-	@Id
+    @Id
     @GeneratedValue
     @Column(name = "id_wypozyczenia", nullable = false)
     private int idWypozyczenia;
@@ -24,54 +24,54 @@ public class Wypozyczenie {
     private int idStudent;
     @Column(name = "numer_egzemplarza")
     private int nrEgzemplarza;
-  
-    public Wypozyczenie(){
-    	
-    	public Integer getIdWypozyczenia() {
-    		return idWypozyczenia;
-    	}
-    	
-    	
-    	public void setIdWypozyczenia(Integer wId) {
-    		this.idWypozyczenia = wId;
-    	}
-    	
-    	public Timestamp getTimestampWypozyczenia() {
-    		return timestampWypozyczenia;
-    	}
-    	
-    	
-    	public void setTimestampWypozyczenia(Timestamp timestampWypozyczenia) {
-    		this.timestampWypozyczenia = timestampWypozyczenia;
-    	}
-    	
-    	public Timestamp getTimestampZwrotu() {
-    		return timestampZwrotu;
-    	}
-    	
-    	
-    	public void setTimestampZwrotu(Timestamp timestampZwrotu) {
-    		this.timestampZwrotu = timestampZwrotu;
-    	}
-    	
-    	
-     	public Integer getIdStudent() {
-    		return idStudent;
-    	}
-    	
-    	
-    	public void setIdStudent(Integer sId) {
-    		this.idStudent = sId;
-    	}
-    	
-     	public Integer getNrEgzemplarza() {
-    		return nrEgzemplarza;
-    	}
-    	
-    	
-    	public void setNrEgzemplarza(Integer nrEgzemplarza) {
-    		this.nrEgzemplarza = nrEgzemplarza;
-    	}
-	
-}
+
+    public Wypozyczenie() {
+    }
+
+    public Integer getIdWypozyczenia() {
+        return idWypozyczenia;
+    }
+
+
+    public void setIdWypozyczenia(Integer wId) {
+        this.idWypozyczenia = wId;
+    }
+
+    public Timestamp getTimestampWypozyczenia() {
+        return timestampWypozyczenia;
+    }
+
+
+    public void setTimestampWypozyczenia(Timestamp timestampWypozyczenia) {
+        this.timestampWypozyczenia = timestampWypozyczenia;
+    }
+
+    public Timestamp getTimestampZwrotu() {
+        return timestampZwrotu;
+    }
+
+
+    public void setTimestampZwrotu(Timestamp timestampZwrotu) {
+        this.timestampZwrotu = timestampZwrotu;
+    }
+
+
+    public Integer getIdStudent() {
+        return idStudent;
+    }
+
+
+    public void setIdStudent(Integer sId) {
+        this.idStudent = sId;
+    }
+
+    public Integer getNrEgzemplarza() {
+        return nrEgzemplarza;
+    }
+
+
+    public void setNrEgzemplarza(Integer nrEgzemplarza) {
+        this.nrEgzemplarza = nrEgzemplarza;
+    }
+
 }

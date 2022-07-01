@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Table(name = "ZAPIS")
 public class Zapis {
 
-	@Id
+    @Id
     @GeneratedValue
     @Column(name = "id_zapis", nullable = false)
     private int idZapis;
@@ -25,52 +25,52 @@ public class Zapis {
     private int idOcena;
     @Column(name = "id_student")
     private int idStudent;
-  
-    public Zapis(){
-    	
-    	public Integer getIdZapis() {
-    		return idZapis;
-    	}
-    	
-    	
-    	public void setIdZapis(Integer zId) {
-    		this.idZapis = zId;
-    	}
-    	
-    	public Timestamp getTimestampZapisu() {
-    		return timestampZapisu;
-    	}
-    	
-    	
-    	public void setTimestampZapisu(Timestamp timestampZapisu) {
-    		this.timestampZapisu = timestampZapisu;
-    	}
-    	
-    	public Integer getIdGrupa() {
-    		return idGrupa;
-    	}
-    	
-    	
-    	public void setIdGrupa(Integer gId) {
-    		this.idGrupa = gId;
-    	}
-    	
-    	public Integer getIdOcena() {
-    		return idOcena;
-    	}
-    	
-    	
-    	public void setIdOcena(Integer oId) {
-    		this.idOcena = oId;
-    	}
-    	
-    	public Integer getIdStudent() {
-    		return idStudent;
-    	}
-    	
-    	
-    	public void setIdStudent(Integer sId) {
-    		this.idStudent = sId;
-    	}	
+
+    public Zapis() {
+    }
+
+    public Integer getIdZapis() {
+        return idZapis;
+    }
+
+
+    public void setIdZapis(Integer zId) {
+        this.idZapis = zId;
+    }
+
+    public Timestamp getTimestampZapisu() {
+        return timestampZapisu;
+    }
+
+
+    public void setTimestampZapisu(Timestamp timestampZapisu) {
+        this.timestampZapisu = timestampZapisu;
+    }
+
+    public Integer getIdGrupa() {
+        return idGrupa;
+    }
+
+
+    public void setIdGrupa(Integer gId) {
+        this.idGrupa = gId;
+    }
+
+    public Integer getIdOcena() {
+        return idOcena;
+    }
+
+
+    public void setIdOcena(Integer oId) {
+        this.idOcena = oId;
+    }
+
+    public Integer getIdStudent() {
+        return idStudent;
+    }
+
+
+    public void setIdStudent(Integer sId) {
+        this.idStudent = sId;
     }
 }

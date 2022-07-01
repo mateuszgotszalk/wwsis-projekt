@@ -11,14 +11,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "GRUPA")
 public class Grupa {
-	@Id
+    @Id
     @GeneratedValue
     @Column(name = "id_grupa", nullable = false)
     private int idGrupa;
-	
+
     @Column(name = "kod", nullable = false, unique = true)
     private String kod;
-    
+
     @Column(name = "dzien_tyg")
     private String dzienTyg;
     @Column(name = "godz_rozpoczecia")
@@ -33,90 +33,91 @@ public class Grupa {
     private int idKurs;
     @Column(name = "id_semestr")
     private int idSemestr;
-  
-    public Grupa(){
-    	
-    	public Integer getIdGrupa() {
-    		return idGrupa;
-    	}
-    	
-    	
-    	public void setIdGrupa(Integer gId) {
-    		this.idGrupa = gId;
-    	}
-    	
-    	
-    	public String getKod() {
-    		return kod;
-    	}
-    	
-    	
-    	public void setKod(String kod) {
-    		this.kod = kod;
-    	}
-    	
-     	public String getDzienTyg() {
-    		return dzienTyg;
-    	}
-    	
-    	
-    	public void setDzienTyg(String dzientyg) {
-    		this.dzienTyg = dzienTyg;
-    	}
-    	
-     	public Time getGodzRozpoczecia() {
-    		return godzRozpoczecia;
-    	}
-    	
-    	
-    	public void setGodzRozpoczecia(Time godzRozpoczecia) {
-    		this.godzRozpoczecia = godzRozpoczecia;
-    	}
-    	
-     	public Time getGodzZakonczenia() {
-    		return godzZakonczenia;
-    	}
-    	
-    	
-    	public void setGodzZakonczenia(Time godzZakonczenia) {
-    		this.godzZakonczenia = godzZakonczenia;
-    	}
-    	
-    	public String getTydzien() {
-    		return tydzien;
-    	}
-    	
-    	
-    	public void setTydzien(String tydzien) {
-    		this.tydzien = tydzien;
-    	}
-    	
-    	public Integer getIdProwadzacy() {
-    		return idProwadzacy;
-    	}
-    	
-    	
-    	public void setIdProwadzacy(Integer pId) {
-    		this.idProwadzacy = pId;
-    	
-    	}
-    	
-    	public Integer getIdKurs() {
-    		return idKurs;
-    	}
-    	
-    	
-    	public void setIdKurs(Integer kId) {
-    		this.idkurs = kId;
-    	}
-    	
-    	public Integer getIdSemestr() {
-    		return idSemestr;
-    	}
-    	
-    	
-    	public void setIdSemestr(Integer semId) {
-    		this.idSemestr = semId;
-    	}
+
+    public Grupa() {
+
+    }
+
+    public Integer getIdGrupa() {
+        return idGrupa;
+    }
+
+
+    public void setIdGrupa(Integer gId) {
+        this.idGrupa = gId;
+    }
+
+
+    public String getKod() {
+        return kod;
+    }
+
+
+    public void setKod(String kod) {
+        this.kod = kod;
+    }
+
+    public String getDzienTyg() {
+        return dzienTyg;
+    }
+
+
+    public void setDzienTyg(String dzientyg) {
+        this.dzienTyg = dzienTyg;
+    }
+
+    public Time getGodzRozpoczecia() {
+        return godzRozpoczecia;
+    }
+
+
+    public void setGodzRozpoczecia(Time godzRozpoczecia) {
+        this.godzRozpoczecia = godzRozpoczecia;
+    }
+
+    public Time getGodzZakonczenia() {
+        return godzZakonczenia;
+    }
+
+
+    public void setGodzZakonczenia(Time godzZakonczenia) {
+        this.godzZakonczenia = godzZakonczenia;
+    }
+
+    public String getTydzien() {
+        return tydzien;
+    }
+
+
+    public void setTydzien(String tydzien) {
+        this.tydzien = tydzien;
+    }
+
+    public Integer getIdProwadzacy() {
+        return idProwadzacy;
+    }
+
+
+    public void setIdProwadzacy(Integer pId) {
+        this.idProwadzacy = pId;
+
+    }
+
+    public Integer getIdKurs() {
+        return idKurs;
+    }
+
+
+    public void setIdKurs(Integer kId) {
+        this.idKurs = kId;
+    }
+
+    public Integer getIdSemestr() {
+        return idSemestr;
+    }
+
+
+    public void setIdSemestr(Integer semId) {
+        this.idSemestr = semId;
     }
 }

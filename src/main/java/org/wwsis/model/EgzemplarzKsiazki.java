@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "EGZEMPLARZ_KSIAZKI")
 public class EgzemplarzKsiazki {
-	@Id
+    @Id
     @GeneratedValue
     @Column(name = "numer_egzemplarza", nullable = false)
     private int nrEgzemplarza;
@@ -17,37 +17,35 @@ public class EgzemplarzKsiazki {
     private String stan;
     @Column(name = "id_ksiazka")
     private int idKsiazka;
-  
-  
-    public EgzemplarzKsiazki(){
-    	
-    	public Integer getNrEgzemplarza() {
-    		return nrEgzemplarza;
-    	}
-    	
-    	
-    	public void setNrEgzemplarza(Integer nrEgzemplarza) {
-    		this.nrEgzemplarza = nrEgzemplarza;
-    	}
-    	
-    	public String getStan() {
-    		return stan;
-    	}
-    	
-    	
-    	public void setStan(String stan) {
-    		this.stan = stan;
-    	}
-    	
-     	public Integer getIdKsiazka() {
-    		return idKsiazka;
-    	}
-    	
-    	
-    	public void setIdKsiazka(Integer kId) {
-    		this.idKsiazka = kId;
-    	}
-    	
-     	
+
+
+    public EgzemplarzKsiazki() {
+    }
+
+    public Integer getNrEgzemplarza() {
+        return nrEgzemplarza;
+    }
+
+
+    public void setNrEgzemplarza(Integer nrEgzemplarza) {
+        this.nrEgzemplarza = nrEgzemplarza;
+    }
+
+    public String getStan() {
+        return stan;
+    }
+
+
+    public void setStan(String stan) {
+        this.stan = stan;
+    }
+
+    public Integer getIdKsiazka() {
+        return idKsiazka;
+    }
+
+
+    public void setIdKsiazka(Integer kId) {
+        this.idKsiazka = kId;
     }
 }
